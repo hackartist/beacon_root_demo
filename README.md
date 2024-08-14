@@ -1,14 +1,14 @@
-# OnChain Data Verification via Beacon Roots DEMO 
+# OnChain Data Verification via Beacon Roots 
 
-This is a demo of an onchain verifier contract getting offchain EL and CL data with merkle proofs and deciding if it is true or not by interacting with another onchain contract which stores beacon block merkle roots according to EIP-4788.
+This is a demo of an on-chain verifier contract getting off-chain execution and consensus layer data with merkle proofs, and deciding if it is true or not by interacting with another on-chain contract which stores beacon block merkle roots according to EIP-4788.
 
-All you need to have installed is `docker` and `make`
+To run the demo just have installed `docker` and `make`
 
-Run `make build` (~30 sec) to prepare all contracts and build the execution docker image
-Then `make run` to see tests run where the contracts interact in a simulated evm blockchain
+- Run `make build` (~30 sec) to prepare all contracts and build the execution docker image
+- Then `make run` to see tests run where the contracts interact in a simulated evm blockchain
 
 
-<img src="data/running_tests.png" width="550px">
+<img src="data/running_tests.png" width="700px">
 
 
 # Theory and Design Behind EIP-4788
